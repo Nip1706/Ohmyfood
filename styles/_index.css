@@ -1,4 +1,14 @@
 button{
   background-color: #9356DC ;
 }
+
+.restaurants{
+  display: flex;
+  flex-direction: column;
+}
+
+.image-carte{
+  display: flex;
+  flex-direction: column;
+}
 /*# sourceMappingURL=_index.css.map */
