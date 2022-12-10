@@ -6,18 +6,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/styles/_index.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
     <title>Document</title>
 </head>
 <body>
-    <div class="logo">
-    <img src="/Maquette Ohmyfood-2/images/logo/ohmyfood.png" alt="logo">
+    <div>
+    <img class="logo" src="/Maquette Ohmyfood-2/images/logo/ohmyfood.png" alt="logo">
     </div>
 
-    <section class="cadre-presentation">
     <div class="form">
-    <i class="fa-solid fa-location-dot"></i>
-    <input type="text" placeholder="Paris, Belleville">
+        <i class="fa-solid fa-location-dot"></i>
+        <input type="text" placeholder="Paris, Belleville">
     </div>
+    
+
+    <section class="cadre-presentation">
     <h1>Réservez le menu qui vous convient</h1>
     <p>Découvrez des restaurants d'exception séléctionnés par nos soins</p>
     <button>Explorez nos restaurants</button>
@@ -25,9 +30,17 @@
 
     <section class="cadre-fonctionnement">
     <h1>Fonctionnement</h1>
+    <div class="btn-container">
+    <div>
     <button>Choisissez un restaurant</button>
+    </div>
+    <div>
     <button>Composez votre menu</button>
+    </div>
+    <div>
     <button>Dégustez au restaurant</button>
+    </div>
+    </div>
     </section>
 
     <section class="restaurants">
@@ -38,14 +51,16 @@
             </div>
             <div class="description">
                 <h3>La Palette du goût</h3>
+                <p>Ménilmontant</p>
             </div>
         </article>
         <article class="carte">
             <div class="image-carte">
-                <img src="/Maquette Ohmyfood-2/images/restaurants/note.jpg" alt="">
+                <img class="note" src="/Maquette Ohmyfood-2/images/restaurants/note.jpg" alt="">
             </div>
             <div class="description">
                 <h3>La note enchantée</h3>
+                <p>Charonne</p>
             </div>
         </article>
         <article class="carte">
@@ -54,6 +69,7 @@
             </div>
             <div class="description">
                 <h3>À la française</h3>
+                <p>Cité Rouge</p>
             </div>
         </article>
         <article class="carte">
@@ -62,8 +78,17 @@
             </div>
             <div class="description">
                 <h3>Le délice des sens</h3>
+                <p>Folie-Méricourt</p>
             </div>
         </article>
     </section>
+    <footer>
+        <h2>ohmyfood</h2>
+        <h3>Proposer un retaurant</h3>
+        <h3>Devenir partenaire</h3>
+        <h3>Mentions légales</h3>
+        <h3>Contact</h3>
+    </footer>
 </body>
+
 </html>
