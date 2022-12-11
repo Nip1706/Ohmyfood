@@ -17,17 +17,18 @@
         margin-top: 15px;
       }
       
-      $lightgrey: #D6DBDF;
-      $grey: #F2F4F4;
+      $grey: #D6DBDF;
+      $lightgrey: #F2F4F4;
       $purple : #9356DC;
+      $lightpurple: #FF79DA;
 
       .form{
         text-align: center;
-        background-color: $lightgrey;
+        background-color: $grey;
         padding: 20px;
         input{
             text-align: center;
-            background-color: $lightgrey;
+            background-color: $grey;
             border-width: 0;
       }
     }
@@ -37,7 +38,7 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        background-color: $grey;
+        background-color: $lightgrey;
         padding-bottom: 20px;
       }
 
@@ -58,12 +59,62 @@
         gap: 10px;
       }
       
-      button{
-        background-color: $purple ;
+    .btn-intro{
+        background: linear-gradient(to left, $purple, $lightpurple) ;
         color: white;
-        padding: 10px;
-        border-radius: 20px;
+        padding: 15px;
+        border-radius: 25px;
+        border-width: 0;
+        font-weight: bolder;
       }
+
+
+      .btn-container{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+      }
+
+      .container {
+        display: flex;
+        flex-direction: row;
+      }
+
+      .number-round{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+      }
+
+      .number-round ol{
+        border: 1px solid red;
+        border-radius: 50%;
+        padding-top: 2px;
+        padding-bottom: 2px;
+        padding-right: 5px;
+        padding-left: 5px;
+      }
+
+
+      .btn{
+        padding: 20px;
+        padding-left: 80px;
+        padding-right: 80px;
+        background-color: $lightgrey;
+        border-width: 0;
+        border-radius: 10px;
+      }
+
+      .btn2{
+        padding-left: 87px;
+        padding-right: 87px;
+      }
+
+      .btn3{
+        padding-left: 86px;
+        padding-right: 86px;
+      }
+
       
       .restaurants{
         display: flex;
