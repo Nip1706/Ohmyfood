@@ -18,7 +18,7 @@
       }
       
       $grey: #D6DBDF;
-      $lightgrey: #F2F4F4;
+      $lightgrey: #F8F9F9;
       $purple : #9356DC;
       $lightpurple: #FF79DA;
 
@@ -51,6 +51,10 @@
         text-align: center;
         font-weight: lighter;
       }
+
+      .cadre-fonctionnement h1{
+        margin-left: 25px;
+      }
       
       .btn-container{
         display: flex;
@@ -78,6 +82,7 @@
       .container {
         display: flex;
         flex-direction: row;
+        gap: 1px;
       }
 
       .number-round{
@@ -87,7 +92,9 @@
       }
 
       .number-round ol{
-        border: 1px solid red;
+        background-color: $purple;
+        border: 1px solid $purple;
+        color: white;
         border-radius: 50%;
         padding-top: 2px;
         padding-bottom: 2px;
@@ -120,6 +127,9 @@
         display: flex;
         flex-direction: column;
         gap: 50px;
+        h1 {
+            margin-left: 25px;
+        }
       }
       
       .carte{
@@ -147,15 +157,28 @@
       
       footer{
         background-color: #616A6B;
+        display: flex;
+        flex-direction: column;
+        gap: 1px;
+        margin-top: 30px;
       }
       
       footer h2{
+        padding-top: 10px;
+        margin-left: 25px;
         font-family: 'shrikhand';
         color: white;
       }
       
-      footer h3{
+      footer h4{
         color: white;
+        margin-left: 25px;
+        padding-bottom: 0px;
+        margin-bottom: 1px;
+      }
+
+      .contact {
+        padding-bottom: 30px;
       }
       
       

@@ -28,7 +28,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #F2F4F4;
+  background-color: #F8F9F9;
   padding-bottom: 20px;
 }
 
@@ -39,6 +39,10 @@ body {
 .cadre-presentation p {
   text-align: center;
   font-weight: lighter;
+}
+
+.cadre-fonctionnement h1 {
+  margin-left: 25px;
 }
 
 .btn-container {
@@ -66,6 +70,7 @@ body {
 .container {
   display: flex;
   flex-direction: row;
+  gap: 1px;
 }
 
 .number-round {
@@ -75,7 +80,9 @@ body {
 }
 
 .number-round ol {
-  border: 1px solid red;
+  background-color: #9356DC;
+  border: 1px solid #9356DC;
+  color: white;
   border-radius: 50%;
   padding-top: 2px;
   padding-bottom: 2px;
@@ -87,7 +94,7 @@ body {
   padding: 20px;
   padding-left: 80px;
   padding-right: 80px;
-  background-color: #F2F4F4;
+  background-color: #F8F9F9;
   border-width: 0;
   border-radius: 10px;
 }
@@ -106,6 +113,9 @@ body {
   display: flex;
   flex-direction: column;
   gap: 50px;
+}
+.restaurants h1 {
+  margin-left: 25px;
 }
 
 .carte {
@@ -133,15 +143,28 @@ img {
 
 footer {
   background-color: #616A6B;
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+  margin-top: 30px;
 }
 
 footer h2 {
+  padding-top: 10px;
+  margin-left: 25px;
   font-family: "shrikhand";
   color: white;
 }
 
-footer h3 {
+footer h4 {
   color: white;
+  margin-left: 25px;
+  padding-bottom: 0px;
+  margin-bottom: 1px;
+}
+
+.contact {
+  padding-bottom: 30px;
 }
 
 /*# sourceMappingURL=_index.css.map */
