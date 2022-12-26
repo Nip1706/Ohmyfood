@@ -7,52 +7,51 @@
     <link rel="stylesheet" href="styles/_index.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
     <title>Ohmyfood</title>
 </head>
 <body>
     <div>
-    <img class="logo" src="/Maquette Ohmyfood-2/images/logo/ohmyfood.png" alt="logo">
+    <img class="logo" src="/Maquette Ohmyfood-2/images/logo/ohmyfood.png" alt="logo" width="150px">
     </div>
 
     <div class="form">
         <i class="fa-solid fa-location-dot"></i>
-        <input type="text" placeholder="Paris, Belleville">
+        <input type="text" id="lieu" value="Paris, Belleville">
     </div>
     
 
     <section class="cadre-presentation">
     <h1>Réservez le menu qui<br>vous convient</h1>
-    <p>Découvrez des restaurants d'exception séléctionnés par nos soins</p>
+    <p>Découvrez des restaurants d'exception,<br> séléctionnés par nos soins</p>
     <button class="btn-intro">Explorez nos restaurants</button>
     </section>
 
     <section class="cadre-fonctionnement">
     <h1>Fonctionnement</h1>
     <div class="btn-container">
-        <div class="container">
+        <div class="step-container">
             <div class="number-round">
                 <ol>1</ol>
             </div>
-        <div>
-        <button class="btn btn1">Choisissez un restaurant</button>
+        <div class="step-choice">     
+            <li class="btn btn1">Choisissez un restaurant</li>
         </div>
-            </div>
-        <div class="container">
+        </div>
+        <div class="step-container">
             <div class="number-round">
                 <ol>2</ol>
             </div>
         <div>
-        <button class="btn btn2">Composez votre menu</button>
+        <li class="btn btn2">Composez votre menu</li>
         </div>
             </div>  
-        <div class="container">
+        <div class="step-container">
             <div class="number-round">
                 <ol>3</ol>
             </div>  
         <div>
-        <button class="btn btn3">Dégustez au restaurant</button>
+        <li class="btn btn3">Dégustez au restaurant</li>
         </div>
         </div>
     </section>
@@ -61,9 +60,11 @@
         <h1>Restaurants</h1>
         <article class="carte-container">
         <a href="#"><div class="carte">
+            
             <div class="image-carte">
                 <img src="/Maquette Ohmyfood-2/images/restaurants/palette.jpg" alt="">
             </div>
+            <button class="new">Nouveau</button>
             <div class="description">
                 <div class="titre-prix">
                 <div class="titre">
@@ -84,6 +85,7 @@
             <div class="image-carte">
                 <img class="note" src="/Maquette Ohmyfood-2/images/restaurants/note.jpg" alt="">
             </div>
+            <button class="new">Nouveau</button>
             <div class="description">
                 <div class="titre-prix">
                 <div class="titre">
