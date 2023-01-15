@@ -1,0 +1,51 @@
+$grey: #EEEEEE;
+$lightgrey: #F8F9F9;
+$purple : #9356DC;
+$lightpurple: #FF79DA;
+
+
+@mixin fa-color{
+    color: grey;
+  }
+
+  @mixin box-shadow{
+    box-shadow: 0px 3px 15px rgb(0 0 0 / 10%);
+  }
+
+  @mixin position-btn{
+    display: flex;
+    align-items: baseline;
+    gap: 30px;
+    padding-left: 35px;
+  }
+
+  .fa-mobile-screen-button{
+    @include fa-color()
+  }
+
+  .fa-list-ul{
+    @include fa-color()
+  }
+
+  .fa-store{
+    @include fa-color()
+  }
+
+  .btn1{
+    padding-right: 65px;
+    @include position-btn();
+    @include box-shadow();
+  }
+
+
+  .btn2{
+    padding-right: 80px;
+    @include position-btn();
+    @include box-shadow();
+  }
+
+  .btn3{
+    padding-right: 75px;
+    @include position-btn();
+    @include box-shadow();
+  }
