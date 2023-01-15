@@ -154,6 +154,22 @@
       margin-left: 25px;
   }
 
+  @mixin fa-color{
+    color: grey;
+  }
+
+    .fa-mobile-screen-button{
+      @include fa-color()
+    }
+
+    .fa-list-ul{
+      @include fa-color()
+    }
+
+    .fa-store{
+      @include fa-color()
+    }
+
     .restaurants{
       display: flex;
       flex-direction: column;
@@ -567,6 +583,16 @@
 
     }
 
+    @media all and (min-width: 768px) and (max-width: 1024px)
+
+    {
+      .restaurants{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 15px;
+      }
+  
+    }
   
 
     

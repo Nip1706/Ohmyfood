@@ -141,6 +141,18 @@ h1 {
   margin-left: 25px;
 }
 
+.fa-mobile-screen-button {
+  color: grey;
+}
+
+.fa-list-ul {
+  color: grey;
+}
+
+.fa-store {
+  color: grey;
+}
+
 .restaurants {
   display: flex;
   flex-direction: column;
@@ -498,6 +510,13 @@ footer .fa-handshake-angle {
   }
   .contact {
     padding-bottom: 30px;
+  }
+}
+@media all and (min-width: 768px) and (max-width: 1024px) {
+  .restaurants {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
   }
 }
 /*# sourceMappingURL=_index.css.map */
