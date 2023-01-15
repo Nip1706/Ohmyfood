@@ -2,6 +2,7 @@ $grey: #EEEEEE;
 $lightgrey: #F8F9F9;
 $purple : #9356DC;
 $lightpurple: #FF79DA;
+$menugreycolor: #f7f7f7;
 
 
 @mixin fa-color{
@@ -12,12 +13,6 @@ $lightpurple: #FF79DA;
     box-shadow: 0px 3px 15px rgb(0 0 0 / 10%);
   }
 
-  @mixin position-btn{
-    display: flex;
-    align-items: baseline;
-    gap: 30px;
-    padding-left: 35px;
-  }
 
   .fa-mobile-screen-button{
     @include fa-color()
@@ -31,21 +26,74 @@ $lightpurple: #FF79DA;
     @include fa-color()
   }
 
+  @mixin position-btn{
+    display: flex;
+    align-items: baseline;
+    gap: 30px;
+    padding: 10px;
+    padding-right: 60px;
+    padding-left: 30px;
+    border-width: 0;
+    border-radius: 10px;
+    background-color: $lightgrey;
+  }
+
   .btn1{
-    padding-right: 65px;
+    @include box-shadow();
+    @include position-btn();
+  }
+
+  .btn3{
     @include position-btn();
     @include box-shadow();
   }
 
 
   .btn2{
-    padding-right: 80px;
     @include position-btn();
     @include box-shadow();
   }
 
-  .btn3{
-    padding-right: 75px;
-    @include position-btn();
-    @include box-shadow();
+  //palette.html
+
+  @mixin marge-menu{
+    margin-left: 10px;
   }
+
+  @mixin border-color-menu-step {
+    background-color: #ffffff;
+    border-radius: 10px;
+  }
+
+  @mixin h3-border-marge-font {
+    font-weight: 500;
+    margin-bottom: 2px;
+    margin-top: 10px;
+    padding-top: 0px;
+  }
+
+  @mixin p-border-marge-font {
+    padding-bottom: 0px;
+    margin-top: 2px;
+    margin-bottom: 10px;
+  }
+
+
+  .titre-accompagnement-palette{
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+    margin-bottom: 10px;
+    @include border-color-menu-step();
+    margin-left: 15px;
+    margin-right: 15px;
+    h3{
+      @include marge-menu();
+      @include h3-border-marge-font();
+    }
+    p{
+      @include marge-menu();
+      @include p-border-marge-font();
+    }
+  }
+

@@ -1,12 +1,8 @@
 
 @import "./Sass/Utils/variables";
 @import "./Sass/Layout/layout.scss";
+@import "./Sass/Base/base";
 
-    body{
-      margin: 0;
-      padding: 0;
-      font-family: 'Roboto';
-    }
 
       
     .form{
@@ -91,6 +87,8 @@
       }
     }
 
+  
+
     li{
       list-style: none;
     }
@@ -100,15 +98,6 @@
       flex-direction: row;
     }
 
-    .btn{
-      padding: 10px;
-      background-color: $lightgrey;
-      padding-left: 35px;
-      padding-right: 45px;
-      border-width: 0;
-      border-radius: 10px;
-      box-shadow: 0px 3px 15px rgb(0 0 0 / 10%);
-    }
 
     h1 {
       margin-left: 25px;
@@ -175,7 +164,7 @@
     }
 
 
-    .fa-heart {
+    .fa-heart .accueil{
       font-size: 20px;
       margin-right: 20px;
       margin-top: 30px;
@@ -208,36 +197,6 @@
       object-fit: cover;
     }
     
-    footer{
-      background-color: #343535;
-      display: flex;
-      flex-direction: column;
-      gap: 1px;
-      margin-top: 30px;
-      h2{
-        padding-top: 10px;
-        margin-left: 25px;
-        font-family: 'shrikhand';
-        color: white;
-      }
-      h4{
-        color: white;
-        margin-left: 25px;
-        padding-bottom: 0px;
-        margin-bottom: 1px;
-        margin-top: 10px;
-      }
-      .fa-solid {
-        margin-right: 15px;
-      }
-      .fa-handshake-angle {
-        margin-right: 10px;
-      }
-    }
-
-    .contact {
-      padding-bottom: 30px;
-    }
 
 
     @media all and (min-width: 1024px) and (max-width: 1440px)
@@ -268,7 +227,43 @@
       }
   
     }
-  
+
+    // palette.html
+    body{
+      position: relative;
+    }
+    .palette-img{
+      width: 100%;
+      position: relative;
+    }
+
+    .menu{
+      border-top-left-radius: 40px;
+      border-top-right-radius: 40px;
+      position: absolute;
+      top: 235px;
+      width: 100%;
+      background-color: $menugreycolor;
+    }
+
+    .intro-menu{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+    
+    .menu-titre{
+      margin-top: 10px;
+      margin-left: 10px;
+    }
+
+    .fa-heart {
+      font-size: 20px;
+      margin-right: 20px;
+      margin-top: 30px;
+    }
+
+    
 
     
     
