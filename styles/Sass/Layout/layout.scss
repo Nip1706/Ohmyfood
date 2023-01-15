@@ -1,7 +1,42 @@
+//logo
+
 .logo{
     display: block;
     margin-left: auto;
     margin-right: auto;
     margin-top: 20px;
     margin-bottom: 10px;
+  }
+
+  //footer
+
+  footer{
+    background-color: #343535;
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+    margin-top: 30px;
+    h2{
+      padding-top: 10px;
+      margin-left: 25px;
+      font-family: 'shrikhand';
+      color: white;
+    }
+    h4{
+      color: white;
+      margin-left: 25px;
+      padding-bottom: 0px;
+      margin-bottom: 1px;
+      margin-top: 10px;
+    }
+    .fa-solid {
+      margin-right: 15px;
+    }
+    .fa-handshake-angle {
+      margin-right: 10px;
+    }
+  }
+
+  .contact {
+    padding-bottom: 30px;
   }
