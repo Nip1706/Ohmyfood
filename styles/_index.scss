@@ -249,12 +249,34 @@
     .intro-menu{
       display: flex;
       flex-direction: row;
-      justify-content: space-between;
+      gap: 80px;
+      align-items: baseline;
     }
     
     .menu-titre{
       margin-top: 10px;
       margin-left: 10px;
+      h1{
+        font-family: 'Shrikhand';
+        font-weight: 400;
+        font-style: italic;
+        color: #2d2d2d;
+        margin-left: 5px;
+      }
+    }
+
+    h5{
+      margin-left: 15px;
+      margin-bottom: 5px;
+      font-weight: 300;
+      
+    }
+
+    .green-line{
+      width: 30px;
+      border: 1.5px solid $greenlinecolor;
+      margin-left: 15px;
+      margin-bottom: 15px;
     }
 
     .fa-heart {
@@ -262,6 +284,63 @@
       margin-right: 20px;
       margin-top: 30px;
     }
+
+    .titre-accompagnement-prix-palette{
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      margin-bottom: 10px;
+      margin-left: 15px;
+      margin-right: 15px;  
+      @include border-color-menu-step();
+      @include box-shadow();
+    }
+
+    @mixin h3-border-marge-font {
+      font-weight: 500;
+      margin-bottom: 2px;
+      margin-top: 10px;
+    }  
+
+    .titre-palette{
+      margin-left: 10px;
+      h4{
+        @include h3-border-marge-font();
+      }
+    }
+
+      .foie-gras{
+        display: flex;
+        flex-direction: row;
+        gap: 120px;
+      p{
+        @include marge-menu();
+        @include p-border-marge-font();
+      }
+    }
+
+   .oeuf{
+      display: flex;
+      flex-direction: row;
+      gap: 110px;
+    p{
+      @include marge-menu();
+      @include p-border-marge-font();
+    }
+  }
+
+  .prix-palette{
+    position: relative;
+  }
+
+
+
+
+
+
+  
+
+
 
     
 
