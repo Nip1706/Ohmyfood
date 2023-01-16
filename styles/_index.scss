@@ -389,15 +389,40 @@ h5 {
   animation-fill-mode: both;
   @include border-color-menu-step();
   @include box-shadow();
-  &:hover .check{
-    translate: -60px;
-    transition-delay: 3s;
-  }
-  &:hover .prix-accompagnement-palette p {
-    translate: -60px;
-    transition-delay: 3s;
-  }
+  &:hover .prix-palette-1{
+    animation-name: translate-check;
+    animation-duration: 0.5s;
+    animation-iteration-count: 0.1s;
+    animation-timing-function: linear ;
+    animation-fill-mode: forwards;
 
+  }
+  &:hover .fa-circle-check {
+    animation-name: spincheck;
+  animation-duration: 500ms;
+  animation-delay: 0.2s;
+  animation-iteration-count: 4s;
+  animation-timing-function: linear; 
+  }
+}
+
+@keyframes translate-check {
+  from {
+      transform:translate(0px);
+  }
+  to {
+      transform:translate(-60px);
+  }
+}
+
+
+@keyframes spincheck {
+  from {
+      transform:rotate(0deg);
+  }
+  to {
+      transform:rotate(360deg);
+  }
 }
 
 @mixin h3-border-marge-font {
@@ -427,6 +452,13 @@ h5 {
   background-color: $greenlinecolor;
   width: 62px;
   height: 62px; 
+}
+
+.fa-circle-check{
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: white;
+  margin-top: 24px;
+  margin-left: 24px;
 }
 
 

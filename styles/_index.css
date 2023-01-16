@@ -490,16 +490,37 @@ h5 {
 .titre-accompagnement-prix-palette:nth-child(6) {
   animation-delay: 600ms;
 }
-.titre-accompagnement-prix-palette:hover .check {
-  translate: -60px;
-  transition-delay: 3s;
-}
-.titre-accompagnement-prix-palette:hover .prix-accompagnement-palette p {
-  translate: -60px;
-  transition-delay: 3s;
+.titre-accompagnement-prix-palette:hover .prix-palette-1 {
+  animation-name: translate-check;
+  animation-duration: 0.5s;
+  animation-iteration-count: 0.1s;
+  animation-timing-function: linear;
   animation-fill-mode: forwards;
 }
+.titre-accompagnement-prix-palette:hover .fa-circle-check {
+  animation-name: spincheck;
+  animation-duration: 500ms;
+  animation-delay: 0.2s;
+  animation-iteration-count: 4s;
+  animation-timing-function: linear;
+}
 
+@keyframes translate-check {
+  from {
+    transform: translate(0px);
+  }
+  to {
+    transform: translate(-60px);
+  }
+}
+@keyframes spincheck {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
 .titre-palette {
   margin-left: 10px;
 }
@@ -521,6 +542,13 @@ h5 {
   background-color: #99e2cf;
   width: 62px;
   height: 62px;
+}
+
+.fa-circle-check {
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: white;
+  margin-top: 24px;
+  margin-left: 24px;
 }
 
 @keyframes animationmenu {
