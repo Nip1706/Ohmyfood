@@ -1,3 +1,15 @@
+.btn-intro {
+  background: linear-gradient(to left, #9356DC, #FF79DA);
+  color: white;
+  padding: 15px;
+  border-radius: 25px;
+  border-width: 0;
+  font-weight: bolder;
+  box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
 .fa-mobile-screen-button {
   color: grey;
 }
@@ -150,18 +162,6 @@ body {
   flex-direction: column;
   align-items: center;
   gap: 20px;
-}
-
-.btn-intro {
-  background: linear-gradient(to left, #9356DC, #FF79DA);
-  color: white;
-  padding: 15px;
-  border-radius: 25px;
-  border-width: 0;
-  font-weight: bolder;
-  box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.1);
-  margin-top: 20px;
-  margin-bottom: 20px;
 }
 
 .loader-background {
@@ -428,6 +428,17 @@ h5 {
   font-size: 20px;
   margin-right: 20px;
   margin-top: 30px;
+  transition: width 2s, height 2s, background-color 2s, transform 1.5s, font-size 2s;
+}
+
+.coeur .fa-heart:hover {
+  transform: rotate(360deg);
+  background: rgb(163, 92, 220);
+  background: linear-gradient(180deg, rgb(163, 92, 220) 0%, rgb(224, 111, 218) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 600;
+  font-size: 30px;
 }
 
 .titre-accompagnement-prix-palette {
@@ -484,14 +495,14 @@ h5 {
     transform: scaleY(1);
   }
 }
-.fricassee {
+.prix-accompagnement-palette {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   gap: 0;
   margin-right: 10px;
 }
-.fricassee p {
+.prix-accompagnement-palette p {
   margin-left: 10px;
   padding-bottom: 0px;
   margin-top: 2px;
@@ -500,116 +511,12 @@ h5 {
   font-weight: lighter;
 }
 
-.foie-gras {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  gap: 0;
-  margin-right: 10px;
-}
-.foie-gras p {
-  margin-left: 10px;
-  padding-bottom: 0px;
-  margin-top: 2px;
-  margin-bottom: 10px;
-  font-size: 12px;
-  font-weight: lighter;
-}
-
-.oeuf {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  gap: 0;
-  margin-right: 10px;
-}
-.oeuf p {
-  margin-left: 10px;
-  padding-bottom: 0px;
-  margin-top: 2px;
-  margin-bottom: 10px;
-  font-size: 12px;
-  font-weight: lighter;
-}
-
-.boeuf {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  gap: 0;
-  margin-right: 10px;
-}
-.boeuf p {
-  margin-left: 10px;
-  padding-bottom: 0px;
-  margin-top: 2px;
-  margin-bottom: 10px;
-  font-size: 12px;
-  font-weight: lighter;
-}
-
-.parmentier {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  gap: 0;
-  margin-right: 10px;
-}
-.parmentier p {
-  margin-left: 10px;
-  padding-bottom: 0px;
-  margin-top: 2px;
-  margin-bottom: 10px;
-  font-size: 12px;
-  font-weight: lighter;
-}
-
-.filet {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  gap: 0;
-  margin-right: 10px;
-}
-.filet p {
-  margin-left: 10px;
-  padding-bottom: 0px;
-  margin-top: 2px;
-  margin-bottom: 10px;
-  font-size: 12px;
-  font-weight: lighter;
-}
-
-.paris {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  gap: 0;
-  margin-right: 10px;
-}
-.paris p {
-  margin-left: 10px;
-  padding-bottom: 0px;
-  margin-top: 2px;
-  margin-bottom: 10px;
-  font-size: 12px;
-  font-weight: lighter;
-}
-
-.macaron {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  gap: 0;
-  margin-right: 10px;
-}
-.macaron p {
-  margin-left: 10px;
-  padding-bottom: 0px;
-  margin-top: 2px;
-  margin-bottom: 10px;
-  font-size: 12px;
-  font-weight: lighter;
+.palette {
+  margin-top: 30px;
+  margin-left: 100px;
+  padding-left: 45px;
+  padding-right: 45px;
+  cursor: pointer;
 }
 
 @media all and (min-width: 1024px) and (max-width: 1440px) {

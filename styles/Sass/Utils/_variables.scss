@@ -5,6 +5,23 @@ $lightpurple: #FF79DA;
 $menugreycolor: #f7f7f7;
 $greenlinecolor: #99e2cf;
 
+@mixin btnstyle {
+    background: linear-gradient(to left, $purple, $lightpurple);
+    color: white;
+    padding: 15px;
+    border-radius: 25px;
+    border-width: 0;
+    font-weight: bolder;
+    box-shadow: 0px 10px 15px rgb(0 0 0 / 10%);
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .btn-intro {
+    @include btnstyle()
+  }
+  
+
 
 @mixin fa-color{
     color: grey;
