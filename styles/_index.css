@@ -69,6 +69,7 @@
   margin-bottom: 10px;
   font-size: 12px;
   font-weight: lighter;
+  margin-right: 10px;
 }
 
 .logo {
@@ -457,6 +458,7 @@ h5 {
 }
 
 .titre-accompagnement-prix-palette {
+  overflow: hidden;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -488,6 +490,15 @@ h5 {
 .titre-accompagnement-prix-palette:nth-child(6) {
   animation-delay: 600ms;
 }
+.titre-accompagnement-prix-palette:hover .check {
+  translate: -60px;
+  transition-delay: 3s;
+}
+.titre-accompagnement-prix-palette:hover .prix-accompagnement-palette p {
+  translate: -60px;
+  transition-delay: 3s;
+  animation-fill-mode: forwards;
+}
 
 .titre-palette {
   margin-left: 10px;
@@ -499,8 +510,17 @@ h5 {
   padding: 2px;
 }
 
-.prix-palette {
+.prix-palette-1 {
   position: relative;
+}
+
+.check {
+  position: absolute;
+  top: -35px;
+  left: 40px;
+  background-color: #99e2cf;
+  width: 62px;
+  height: 62px;
 }
 
 @keyframes animationmenu {
@@ -516,7 +536,6 @@ h5 {
   flex-direction: row;
   justify-content: space-between;
   gap: 0;
-  margin-right: 10px;
 }
 .prix-accompagnement-palette p {
   margin-left: 10px;
@@ -525,6 +544,7 @@ h5 {
   margin-bottom: 10px;
   font-size: 12px;
   font-weight: lighter;
+  margin-right: 10px;
 }
 
 .command-btn {

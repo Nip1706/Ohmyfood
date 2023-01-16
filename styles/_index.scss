@@ -377,7 +377,7 @@ h5 {
       animation-delay: 100ms * $i;
     }
   }
-
+  overflow: hidden;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -389,6 +389,15 @@ h5 {
   animation-fill-mode: both;
   @include border-color-menu-step();
   @include box-shadow();
+  &:hover .check{
+    translate: -60px;
+    transition-delay: 3s;
+  }
+  &:hover .prix-accompagnement-palette p {
+    translate: -60px;
+    transition-delay: 3s;
+  }
+
 }
 
 @mixin h3-border-marge-font {
@@ -407,9 +416,20 @@ h5 {
 }
 
 
-.prix-palette {
+.prix-palette-1 {
   position: relative;
 }
+
+.check{
+  position: absolute;
+  top: -35px;
+  left: 40px;
+  background-color: $greenlinecolor;
+  width: 62px;
+  height: 62px; 
+}
+
+
 
 @keyframes animationmenu {
   0% {
@@ -426,7 +446,6 @@ h5 {
   flex-direction: row;
   justify-content: space-between;
   gap: 0;
-  margin-right: 10px
 }
 
 .prix-accompagnement-palette {
