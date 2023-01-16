@@ -60,6 +60,78 @@
       margin-top: 20px;
       margin-bottom: 20px;
   }
+
+    .loader-background {
+      position: fixed;
+      background-color: white;
+      height: 100%;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      z-index: 2;
+      opacity: 0.9;
+      animation: hide 0.5s;
+      animation-fill-mode: forwards;
+      animation-delay: 3s;
+    }
+
+    @keyframes hide {
+      0%{
+        transform: scale(1);
+      }
+      100%{
+        transform: scale(0);
+      }
+    }
+
+    .loader{
+      margin: auto;
+      margin-top: 100px;
+      margin-bottom: 10px;
+      border: 16px solid lightgrey;
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      border-top-color: $purple;
+      border-bottom-color: $greenlinecolor;
+      border-left-color: $lightpurple;
+      animation: loader 3s linear infinite;
+      animation-duration: 0.6s;
+    }
+
+    @keyframes loader {
+      0%{
+        transform: rotate(0deg) scale(1);
+        border-top-color: $lightpurple;
+        border-bottom-color: $purple;
+        border-left-color: $greenlinecolor;  
+      }
+      25%{
+        border-top-color: $greenlinecolor;
+        border-bottom-color: $lightpurple;
+        border-left-color: $purple;  
+      }
+      50%{
+        transform: rotate(360deg) scale(1);
+        border-top-color: $purple;
+        border-bottom-color: $greenlinecolor;
+        border-left-color: $lightpurple;  
+      }
+      75%{
+        border-top-color: $lightpurple;
+        border-bottom-color: $greenlinecolor;
+        border-left-color: $purple;  
+      }
+      100%{
+        transform: rotate(720deg) scale(1);
+        border-top-color: $lightpurple;
+        border-bottom-color: $greenlinecolor;
+        border-left-color: $purple;  
+      }
+
+    }
+     
     
     .step-container {
       display: flex;
@@ -164,7 +236,7 @@
     }
 
 
-    .fa-heart .accueil{
+    .fa-heart {
       font-size: 20px;
       margin-right: 20px;
       margin-top: 30px;
@@ -232,6 +304,14 @@
     body{
       position: relative;
     }
+
+    .palette-logo{
+      display: flex;
+      justify-content: flex-start;
+      gap: 100px;
+      align-items: center;
+    }
+
     .palette-img{
       width: 100%;
       position: relative;
@@ -286,12 +366,18 @@
     }
 
     .titre-accompagnement-prix-palette{
+      @for $i from 1 through 3 {
+        &:nth-child(#{$i}) {
+          animation-delay: 100ms * $i;
+        }
+      }
       display: flex;
       flex-direction: column;
       justify-content: space-between;
       margin-bottom: 10px;
       margin-left: 15px;
-      margin-right: 15px;  
+      margin-right: 15px; 
+      animation: animationmenu 2s;
       @include border-color-menu-step();
       @include box-shadow();
     }
@@ -331,6 +417,15 @@
 
   .prix-palette{
     position: relative;
+  }
+
+  @keyframes animationmenu {
+    0%{
+      transform:scaleY(0);
+    }
+    100%{
+      transform: scaleY(1);
+    }
   }
 
 
