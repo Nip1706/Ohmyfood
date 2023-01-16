@@ -33,6 +33,8 @@ $greenlinecolor: #99e2cf;
 
 
   .fa-mobile-screen-button{
+    margin-right: 20px;
+    margin-left: 0px;
     @include fa-color()
   }
 
@@ -47,27 +49,29 @@ $greenlinecolor: #99e2cf;
   @mixin position-btn{
     display: flex;
     align-items: baseline;
-    gap: 30px;
-    padding: 10px;
-    padding-right: 60px;
-    padding-left: 30px;
     border-width: 0;
     border-radius: 10px;
     background-color: $lightgrey;
   }
 
   .btn1{
+    padding-right: 65px;
+    padding-left: 30px;
     @include box-shadow();
     @include position-btn();
   }
 
   .btn3{
+    padding-right: 65px;
+    padding-left: 30px;
     @include position-btn();
     @include box-shadow();
   }
 
 
   .btn2{
+    padding-right: 80px;
+    padding-left: 30px;
     @include position-btn();
     @include box-shadow();
   }
