@@ -309,6 +309,8 @@ body {
 .palette-img {
   width: 100%;
   position: relative;
+  height: 230px;
+  object-fit: cover;
 }
 
 .logo-position-palette{
@@ -320,10 +322,11 @@ body {
   border-top-left-radius: 40px;
   border-top-right-radius: 40px;
   position: absolute;
-  top: 235px;
+  top: 250px;
   width: 100%;
   background-color: $menugreycolor;
 }
+
 
 .intro-menu {
   display: flex;

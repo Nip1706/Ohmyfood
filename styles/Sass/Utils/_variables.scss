@@ -4,6 +4,7 @@ $purple : #9356DC;
 $lightpurple: #FF79DA;
 $menugreycolor: #f7f7f7;
 $greenlinecolor: #99e2cf;
+$hoverbtn: #f5edff;
 
 @mixin btnstyle {
     background: linear-gradient(to left, $purple, $lightpurple);
@@ -59,6 +60,10 @@ $greenlinecolor: #99e2cf;
     padding-left: 30px;
     @include box-shadow();
     @include position-btn();
+    &:hover {
+        background-color: $hoverbtn;
+      }
+    
   }
 
   .btn3{
@@ -66,6 +71,10 @@ $greenlinecolor: #99e2cf;
     padding-left: 30px;
     @include position-btn();
     @include box-shadow();
+    &:hover {
+        background-color: $hoverbtn;
+      }
+
   }
 
 
@@ -74,6 +83,10 @@ $greenlinecolor: #99e2cf;
     padding-left: 30px;
     @include position-btn();
     @include box-shadow();
+    &:hover {
+        background-color: $hoverbtn;
+      }
+
   }
 
   //palette.html
