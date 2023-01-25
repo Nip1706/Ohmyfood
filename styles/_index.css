@@ -551,15 +551,6 @@ h5 {
   padding: 2px;
 }
 
-.hide-foie {
-  display: contents;
-}
-
-.visible-foie {
-  visibility: hidden;
-  display: none;
-}
-
 .prix-palette-1 {
   position: relative;
 }
@@ -688,12 +679,22 @@ h5 {
     animation-iteration-count: 4s;
     animation-timing-function: linear;
   }
-  .titre-accompagnement-prix-palette:hover .hide-foie {
-    display: none;
+  .titre-accompagnement-prix-palette:hover .accompagnement-palette {
+    width: 185px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
   }
-  .titre-accompagnement-prix-palette:hover .visible-foie {
-    display: contents;
-    visibility: visible;
+  .titre-accompagnement-prix-palette:hover .hide {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .titre-accompagnement-prix-palette:hover .titre-palette {
+    width: 185px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
   }
 }
 /*# sourceMappingURL=_index.css.map */

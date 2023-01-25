@@ -451,18 +451,6 @@ h5 {
   }
 }
 
-.hide-foie{
-  display: contents;
-}
-
-.visible-foie{
-  visibility: hidden;
-  display: none;
-}
-
-
-
-
 
 
 
@@ -593,17 +581,28 @@ h5 {
     animation-iteration-count: 4s;
     animation-timing-function: linear; 
     }
-    &:hover .hide-foie{
-      display: none;
+    &:hover .accompagnement-palette{
+      width: 185px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
     }
-    &:hover .visible-foie{
-      display: contents;
-      visibility: visible;
+    &:hover .hide{
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+    &:hover .titre-palette{
+      width: 185px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
     }
     
     
-  
+    
   }
+
   
   
   
