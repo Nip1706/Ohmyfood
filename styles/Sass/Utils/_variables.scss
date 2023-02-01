@@ -1,3 +1,5 @@
+//COLOR
+
 $grey: #EEEEEE;
 $lightgrey: #F8F9F9;
 $purple : #9356DC;
@@ -6,6 +8,8 @@ $menugreycolor: #f7f7f7;
 $greenlinecolor: #99e2cf;
 $hoverbtn: #f5edff;
 $newtextgreen: #008766;
+
+//MIXIN
 
 @mixin btnstyle {
     background: linear-gradient(to left, $purple, $lightpurple);
@@ -23,16 +27,9 @@ $newtextgreen: #008766;
     @include btnstyle()
   }
   
-
-
-@mixin fa-color{
+  @mixin fa-color{
     color: grey;
   }
-
-  @mixin box-shadow{
-    box-shadow: 0px 3px 15px rgb(0 0 0 / 10%);
-  }
-
 
   .fa-mobile-screen-button{
     margin-right: 20px;
@@ -46,6 +43,10 @@ $newtextgreen: #008766;
 
   .fa-store{
     @include fa-color()
+  }
+
+  @mixin box-shadow{
+    box-shadow: 0px 3px 15px rgb(0 0 0 / 10%);
   }
 
   @mixin position-btn{
@@ -78,7 +79,6 @@ $newtextgreen: #008766;
 
   }
 
-
   .btn2{
     padding-right: 80px;
     padding-left: 30px;
@@ -90,7 +90,6 @@ $newtextgreen: #008766;
 
   }
 
-  //palette.html
 
   @mixin marge-menu{
     margin-left: 10px;
@@ -156,6 +155,87 @@ $newtextgreen: #008766;
     animation-timing-function: linear; 
     }
   }
+
+  @mixin h3-border-marge-font {
+    font-weight: 500;
+    margin-bottom: 2px;
+    margin-top: 10px;
+    padding: 0px;
+  }
+  
+  .titre-palette {
+    margin-left: 10px;
+  
+    h4 {
+      @include h3-border-marge-font();
+    }
+  }
+
+  @mixin position-menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 0;
+  }
+  
+  .prix-accompagnement-palette {
+    @include position-menu();
+    p {
+      @include marge-menu();
+      @include p-border-marge-font();
+    }
+  
+  }
+
+  //KEYFRAMES
+
+  @keyframes hide {
+    0% {
+      transform: scale(1);
+    }
+  
+    100% {
+      transform: scale(0);
+    }
+  }
+
+  @keyframes loader {
+    0% {
+      transform: rotate(0deg) scale(1);
+      border-top-color: $lightpurple;
+      border-bottom-color: $purple;
+      border-left-color: $greenlinecolor;
+    }
+  
+    25% {
+      border-top-color: $greenlinecolor;
+      border-bottom-color: $lightpurple;
+      border-left-color: $purple;
+    }
+  
+    50% {
+      transform: rotate(360deg) scale(1);
+      border-top-color: $purple;
+      border-bottom-color: $greenlinecolor;
+      border-left-color: $lightpurple;
+    }
+  
+    75% {
+      border-top-color: $lightpurple;
+      border-bottom-color: $greenlinecolor;
+      border-left-color: $purple;
+    }
+  
+    100% {
+      transform: rotate(720deg) scale(1);
+      border-top-color: $lightpurple;
+      border-bottom-color: $greenlinecolor;
+      border-left-color: $purple;
+    }
+  
+  }
+  
+  
   
   @keyframes translate-check {
     from {
@@ -176,20 +256,6 @@ $newtextgreen: #008766;
     }
   }
   
-  @mixin h3-border-marge-font {
-    font-weight: 500;
-    margin-bottom: 2px;
-    margin-top: 10px;
-    padding: 0px;
-  }
-  
-  .titre-palette {
-    margin-left: 10px;
-  
-    h4 {
-      @include h3-border-marge-font();
-    }
-  }
 
   @keyframes animationmenu {
     0% {
@@ -201,19 +267,4 @@ $newtextgreen: #008766;
     }
   }
   
-  @mixin position-menu{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    gap: 0;
-  }
-  
-  .prix-accompagnement-palette {
-    @include position-menu();
-    p {
-      @include marge-menu();
-      @include p-border-marge-font();
-    }
-  
-  }
   

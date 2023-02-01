@@ -75,15 +75,6 @@
   animation-delay: 3s;
 }
 
-@keyframes hide {
-  0% {
-    transform: scale(1);
-  }
-
-  100% {
-    transform: scale(0);
-  }
-}
 
 .loader {
   margin: auto;
@@ -100,41 +91,6 @@
   animation-duration: 0.6s;
 }
 
-@keyframes loader {
-  0% {
-    transform: rotate(0deg) scale(1);
-    border-top-color: $lightpurple;
-    border-bottom-color: $purple;
-    border-left-color: $greenlinecolor;
-  }
-
-  25% {
-    border-top-color: $greenlinecolor;
-    border-bottom-color: $lightpurple;
-    border-left-color: $purple;
-  }
-
-  50% {
-    transform: rotate(360deg) scale(1);
-    border-top-color: $purple;
-    border-bottom-color: $greenlinecolor;
-    border-left-color: $lightpurple;
-  }
-
-  75% {
-    border-top-color: $lightpurple;
-    border-bottom-color: $greenlinecolor;
-    border-left-color: $purple;
-  }
-
-  100% {
-    transform: rotate(720deg) scale(1);
-    border-top-color: $lightpurple;
-    border-bottom-color: $greenlinecolor;
-    border-left-color: $purple;
-  }
-
-}
 
 
 .step-container {
