@@ -1,3 +1,4 @@
+
 .btn-intro {
   background: linear-gradient(to left, #9356DC, #FF79DA);
   color: white;
@@ -8,6 +9,7 @@
   box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.1);
   margin-top: 20px;
   margin-bottom: 20px;
+  cursor: pointer;
 }
 
 .btn-intro:hover{
@@ -38,6 +40,8 @@
   border-width: 0;
   border-radius: 10px;
   background-color: #F8F9F9;
+  cursor: pointer;
+
 }
 .btn1:hover {
   background-color: #f5edff;
@@ -52,6 +56,7 @@
   border-radius: 10px;
   background-color: #F8F9F9;
   box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
 }
 .btn3:hover {
   background-color: #f5edff;
@@ -66,6 +71,7 @@
   border-radius: 10px;
   background-color: #F8F9F9;
   box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
 }
 .btn2:hover {
   background-color: #f5edff;
@@ -211,6 +217,7 @@ footer h4 {
   padding-bottom: 0px;
   margin-bottom: 1px;
   margin-top: 10px;
+  cursor: pointer;
 }
 footer .fa-solid {
   margin-right: 15px;
@@ -231,11 +238,13 @@ body {
 
 .form {
   text-align: center;
+  cursor: pointer;
   background-color: #EEEEEE;
   padding: 15px;
 }
 .form input {
   text-align: center;
+  cursor: pointer;
   background-color: #EEEEEE;
   border-width: 0;
   font-size: 15px;
@@ -471,6 +480,7 @@ a:visited {
   font-size: 30px;
   margin-right: 20px;
   margin-top: 30px;
+  cursor: pointer;
   transition: width 2s, height 2s, background-color 2s, transform 1.5s, font-size 2s;
 }
 
