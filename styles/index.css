@@ -475,7 +475,19 @@ a:visited {
   -webkit-text-fill-color: transparent;
   font-weight: 600;
   font-size: 30px;
+  animation: coeur;
+  animation-duration: 5000ms;
 }
+
+@keyframes coeur{
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+}
+
 
 .image-carte {
   display: flex;

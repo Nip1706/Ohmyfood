@@ -193,6 +193,14 @@
     border-left-color: #9356DC;
   }
 }
+@keyframes coeur {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 @keyframes translate-check {
   from {
     transform: translate(0px);
@@ -474,7 +482,20 @@ a:visited {
   -webkit-text-fill-color: transparent;
   font-weight: 600;
   font-size: 30px;
+  animation-duration: 5000ms;
 }
+
+@keyframes coeur{
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+}
+
+
+
 
 .image-carte {
   display: flex;
